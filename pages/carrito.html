@@ -115,150 +115,118 @@
     <main>
         <!--Sección 1 :  contiene el contenedor de la lista de productos y contenedor  de precios-->
         <section>
-            <div class="mt-5 carrito-contenedor_principal">
+            <div class="carrito-contenedor_principal">
                 <!-- contenedor de texto prinicpal y fondo  -->
-                <div class="row mt-5 ">
-                    <div class="carrito-texto_principal col-md-12 col-lg-12 col-sm">
-                        <h1>Mi carrito</h1>
-                    </div>
-                </div>
-                <div class="row">
-                    <!-- Contenedor de la lista de productos en el carrito -->
-                    <div class="col-lg-8">
-                        <!-- Contenedor Card 1  -->
-                        <div class="card_producto">
-                            <div class="carrito_imagen_producto">
-                                <img src="../imagenes/blusa.png">
-                            </div>
-                
-                            <div class="texto-producto">
-                                <h3>Blusa Verano</h3>
-                                <h5>$300 MX</h5>
-                                <p class="cantidad_producto">Cantidad: <input value="1">
-                                    <a class="eliminar_producto" href="carrito.html">
-                                        <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
-                                        <span>Eliminar</span>
-                                    </a>
-                            </div>
-                        </div>
-                
-                        <!-- Contenedor card 2 -->
-                        <div class="card_producto">
-                            <div class="carrito_imagen_producto">
-                                <img src="../imagenes/corazon_chamarra.png">
-                            </div>
-                
-                            <div class="texto-producto">
-                                <h3 class="product-name">El corazón</h3>
-                                <h4 class="product-price">$700 MX</h4>
-                                <p class="cantidad_producto">Cantidad: <input value="1">
-                                    <a class="eliminar_producto" href="carrito.html">
-                                        <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
-                                        <span>Eliminar</span>
-                                    </a>
-                            </div>
-                        </div>
-                        <!-- Contenedor Card 3  -->
-                        <div class="card_producto">
-                            <div class="carrito_imagen_producto">
-                                <img src="../imagenes/catrin.webp">
-                            </div>
-                            <div class="texto-producto">
-                                <h3>El catrin</h3>
-                                <h5>$700 MX</h5>
-                                <p class="cantidad_producto">Cantidad: <input value="1">
-                                    <a class="eliminar_producto" href="carrito.html">
-                                        <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
-                                        <span>Eliminar</span>
-                                    </a>
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Fin de contenedor card 2 -->
-                    </div>
-                    <!-- Fin del contenedor lista de productos -->
-                
-                    <!-- Contenedor hijo: precio total -->
-                    <div class="col-md-5 col-lg-4 order-md-last">
-                        <h4 class="d-flex justify-content-between align-items-center mb-3">
-                            <span class="text-primary">Tú carrito</span>
-                            <span class="badge bg-primary rounded-pill">3</span>
-                        </h4>
-                        <ul class="list-group mb-3">
-                            <li class="list-group-item d-flex justify-content-between lh-sm">
-                                <div>
-                                    <h6 class="my-0">Blusa verano</h6>
-                                    <small class="text-muted">Cantidades: 1</small>
-                                </div>
-                                <span class="text-muted">$300 MX</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-sm">
-                                <div>
-                                    <h6 class="my-0">El corazón</h6>
-                                    <small class="text-muted">Cantidades: 1</small>
-                                </div>
-                                <span class="text-muted">$700 MX</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between lh-sm">
-                                <div>
-                                    <h6 class="my-0">El catrin</h6>
-                                    <small class="text-muted">Cantidades: 1</small>
-                                </div>
-                                <span class="text-muted">$700 MX</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between bg-light">
-                                <div class="text-success">
-                                    <h6 class="my-0">Descuento aplicado</h6>
-                                    <small>#NOOKNOOKDESCUENTO01</small>
-                                </div>
-                                <span class="text-success">−$200 MX</span>
-                            </li>
-                            <li class="list-group-item d-flex justify-content-between">
-                                <span>Total (MX)</span>
-                                <strong>$1500</strong>
-                            </li>
-                        </ul>
-                
-                        <form class="card p-2">
-                            <div class="input-group">
-                                <input type="text" class="form-control" placeholder="Código de descuento">
-                                <button type="submit" class="btn btn-secondary">Aplicar</button>
-                            </div>
-                        </form>
-                    </div>
 
+                <div class="carrito-texto_principal">
+                    <h1>Mi carrito</h1>
                 </div>
 
 
+                <!-- Contenedor de la lista de productos en el carrito -->
+                <div class="carrito-contenedor_productos">
+                    <!-- Contenedor Card 1  -->
+                    <div class="card_producto">
+                        <div class="carrito_imagen_producto">
+                            <img src="../imagenes/blusa.png">
+                        </div>
 
+                        <div class="texto-producto">
+                            <h3>Blusa Verano</h3>
+                            <h5>$300 MX</h5>
+                            <p class="cantidad_producto">Cantidad: <input value="1">
+                                <a class="eliminar_producto" href="carrito.html">
+                                    <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
+                                    <span>Eliminar</span>
+                                </a>
+                        </div>
+                    </div>
 
+                    <!-- Contenedor card 2 -->
+                    <div class="card_producto">
+                        <div class="carrito_imagen_producto">
+                            <img src="../imagenes/corazon_chamarra.png">
+                        </div>
 
+                        <div class="texto-producto">
+                            <h3 class="product-name">El corazón</h3>
+                            <h4 class="product-price">$700 MX</h4>
+                            <p class="cantidad_producto">Cantidad: <input value="1">
+                                <a class="eliminar_producto" href="carrito.html">
+                                    <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
+                                    <span>Eliminar</span>
+                                </a>
+                        </div>
+                    </div>
+                    <!-- Contenedor Card 3  -->
+                    <div class="card_producto">
+                        <div class="carrito_imagen_producto">
+                            <img src="../imagenes/catrin.webp">
+                        </div>
+                        <div class="texto-producto">
+                            <h3>El catrin</h3>
+                            <h5>$700 MX</h5>
+                            <p class="cantidad_producto">Cantidad: <input value="1">
+                                <a class="eliminar_producto" href="carrito.html">
+                                    <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
+                                    <span>Eliminar</span>
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Fin de contenedor card 2 -->
+                </div>
+                <!-- Fin del contenedor lista de productos -->
 
+                <!-- Contenedor hijo: precio total -->
+                <div class="carrito-contenedor_precios">
+                    <h4 class="d-flex justify-content-between align-items-center mb-3">
+                        <span class="text-primary">Tú carrito</span>
+                        <span class="badge bg-primary rounded-pill">3</span>
+                    </h4>
+                    <ul class="list-group mb-3">
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">Blusa verano</h6>
+                                <small class="text-muted">Cantidades: 1</small>
+                            </div>
+                            <span class="text-muted">$300 MX</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">El corazón</h6>
+                                <small class="text-muted">Cantidades: 1</small>
+                            </div>
+                            <span class="text-muted">$700 MX</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between lh-sm">
+                            <div>
+                                <h6 class="my-0">El catrin</h6>
+                                <small class="text-muted">Cantidades: 1</small>
+                            </div>
+                            <span class="text-muted">$700 MX</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between bg-light">
+                            <div class="text-success">
+                                <h6 class="my-0">Descuento aplicado</h6>
+                                <small>#NOOKNOOKDESCUENTO01</small>
+                            </div>
+                            <span class="text-success">−$200 MX</span>
+                        </li>
+                        <li class="list-group-item d-flex justify-content-between">
+                            <span>Total (MX)</span>
+                            <strong>$1500</strong>
+                        </li>
+                    </ul>
 
-                <!-- <div class="carrito-contenedor_precios">
-                    <p>
-                        Precio total
-                        <span>$ 3,000</span>
-                    </p>
-                    <p>
-                        Numero de productos
-                        <span>3</span>
-                    </p>
-
-                    <form action="">
-                        <div class="contenedor_input">
-                            <label for="descuento">Descuento</label>
-                            <input type="text" id="descuento" autocomplete="off" placeholder="Ingrese un descuento"
-                                required class="text-input">
+                    <form class="card p-2">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Código de descuento">
+                            <button type="submit" class="btn btn-secondary">Aplicar</button>
                         </div>
                     </form>
+                </div>
 
-                    <p>
-                        Total a pagar
-                        <span>$ 2,000</span>
-                    </p>
-                    <a class="btn_checar" href="#">Pagar</a>
-                </div> -->
 
             </div>
             <!-- Fin del contenedor hijo: precio total -->
